@@ -14,14 +14,14 @@ jobs:
  
     steps:
     - name: Checkout
-    - uses: actions/checkout@v2
+      uses: actions/checkout@v2
     
     - name: Setup node
       uses: actions/setup-node@v2
       
     - name: Install dependencies
-    - run: npm ci
+      run: npm ci
     
     - name: Build static file
-    - run: npm run build
+      run: npm run build
     
